@@ -1,0 +1,16 @@
+stage:
+    - build
+    - test
+
+build_car:
+  image: alphine
+  stage: build
+  script:
+    - echo "building the car"
+    - mkdir build 
+    - cd build 
+    - touch cars.txt
+    - echo "lets go" > cars.txt
+
+
+
